@@ -24,9 +24,16 @@ body {
 }
 
 .content{
-  color:#0B192E !important;
+  background-color:#062D60 !important;
 }
 
-.header{
-  color:#0B192E !important;
+
+
+.text-card{
+  color:white !important;
+}
+
+.content p{
+  font-size:18px;
+
 }

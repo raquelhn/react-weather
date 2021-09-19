@@ -2,7 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import ContentCard from './components/contentCard';
 import RefreshButton from './components/refreshButton';
-import {Header, Grid} from 'semantic-ui-react'
+import {Header} from 'semantic-ui-react'
 
 
 
@@ -44,10 +44,11 @@ function App() {
   return (
     <div className='App'>
      
-      <Header  as='h1' textAlign='center'>Welcome</Header>
+      <Header  as='h1' textAlign='center'>Welcome </Header> 
+      
       <RefreshButton />
       {(typeof data.results != 'undefined') ? (
-        <ContentCard weatherData={data}/>
+        <ContentCard weatherData={data} latitude={lat} longtitude={long} />
       ): (
         <div></div>
       )}
